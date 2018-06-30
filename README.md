@@ -4,7 +4,7 @@ Oh hello there, this repository is for the Pixel Art Maker Project, which is par
 
 ## The Project Details
 
-In this project, we have been provided with a headstart via the [starter template](https://github.com/udacity/project-pixel-art-maker-starter) so we don't have to build from scratch. Using this template, I'm building the app to enable users do the following:
+In this project, we have been provided with a headstart via the [starter template](https://github.com/udacity/project-pixel-art-maker-starter) so we don't have to build from scratch. Using this template, I am building the app to enable users do the following:
 
 1. Dynamically set the size of the table as an N by M grid.
 2. Choose a color.
