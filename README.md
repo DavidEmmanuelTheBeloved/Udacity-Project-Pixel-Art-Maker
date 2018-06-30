@@ -1,14 +1,23 @@
-Pixel Art Maker Project
-Table of Contents
+# Project: Pixel Art Maker
 
-    Instructions
-    Contributing
+Oh hello there, this repository is for the Pixel Art Maker Project, which is part of my [Udacity Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) program.
 
-Instructions
+## The Project Details
 
-To get started, open designs.js and start building out the app's functionality.
+In this project, we have been provided with a headstart via the [starter template](https://github.com/udacity/project-pixel-art-maker-starter).  Using this template, I'm building the script to do the following:
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
-Contributing
+1. Upon form submission, build the grid.
+    - The form provides the number of rows (via the grid height) and columns (via the grid width).
+    - The grid is a `<table>`.
+2. Upon clicking on a single grid square, color that square's background color to the currently selected hex color.
+3. Build it with JavaScript (not jQuery).
 
-This repository is the starter code for all Udacity students. Therefore, we most likely will not accept pull requests.
+## Reviewer Note
+
+`///` indicates "thought process" or strategy for the code/project reviewer.
+
+## Disclaimer
+
+This repository is not for general use, but rather an exercise as part of an education program.
+   
+David
