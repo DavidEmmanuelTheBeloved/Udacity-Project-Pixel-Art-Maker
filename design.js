@@ -1,47 +1,20 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
-let height, width, color, reset;
-function makeGrid() {
-    $("#pixel_canvas").html("");
-    height = $("#input_height").val();
-    width = $("#input_width").val();
-    if (height > 50 || width > 50 || height < 1 || width < 1) {
-        if (!error.classList.contains("error")) {
-            error.classList.toggle("error");
-            error.innerText = "the dimension has to be smaller than 50 and bigger than 0";
-            backUp();
-        }
-    } else {
-        error.innerText = "";
-        $("div").removeClass("error");
-        for (let x = 0; x < height; x++) {
-            $('#pixel_canvas').append('<tr></tr>');
-        }
-        for (let y = 0; y < width; y++) {
-            $('#pixel_canvas tr').each(function () {
-                $(this).append('<td></td>');
-            });
-        }
+$(document).ready(function () { // Makes it possible to start to manipulate the document
+  $('#sizePicker').submit(function makeGrid(grid) {  // Creates the grid upon clicking the button 'Submit'
+    $('table tr').remove(); // Lets the grid be cleared when hitting the 'Submit' button again
+    var row_input = $('#input_height').val(); // Allows the user to add a chosen value inside the input box to add rows 
+    var col_input = $('#input_width').val(); // Allows the user to add a chosen value inside the 2nd input box to add columns
+    for (var i = 1; i <= row_input; i++) { 
+      $('table').append("<tr></tr>"); // This loop creates a row of cells
+      for (var j = 1; j <= col_input; j++) {
+        $('tr:last').append("<td></td>"); // This loop adds a cell after every row
+        $('td').attr("class", 'cells') // For every 'td', a class of 'cells' is created
+      }
     }
-}
-color = $('#colorPicker');
-$(document).on("mousedown", "tr td", function () {
-    let colorValue = color.val();
-    $(this).css('background-color', colorValue);
-    $('tr td').bind("mousemove", function () {
-        let colorValue = color.val();
-        $(this).css('background-color', colorValue);
-    }).mouseup(function() {
-        $('td').unbind('mousemove');
+    grid.preventDefault(); // Prevents the grid to be deleted after it is created
+
+    $('.cells').click(function (event) { // The function allows the user to color a cell on click
+      var paint = $('#colorPicker').val();
+      $(event.target).css('background-color', paint); // Lets the chosen color on a click event to be added to the grid
     });
-    $('tr td').on('dblclick',function () {
-        $(this).css('background-color', "#FFFFFF")
-    })
+  }); 
 });
-reset = $("#pixel_canvas").html();
-function backUp() {
-    $("#pixel_canvas").html(reset);
-}
