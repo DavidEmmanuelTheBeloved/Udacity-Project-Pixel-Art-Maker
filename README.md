@@ -1,23 +1,20 @@
 # Project: Pixel Art Maker
 
-Oh hello there, this repository is for the Pixel Art Maker Project, which is part of my [Udacity Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) program.
+Oh hello there, this repository is for the Pixel Art Maker Project, which is part of my Google Africa Challenge Scholarship: Front-End(https://classroom.udacity.com/courses/ud304-africa/) program.
 
 ## The Project Details
 
-In this project, we have been provided with a headstart via the [starter template](https://github.com/udacity/project-pixel-art-maker-starter).  Using this template, I'm building the script to do the following:
+In this project, we have been provided with a headstart via the [starter template](https://github.com/udacity/project-pixel-art-maker-starter).  Using this template, I'm building the script to enable users do the following:
 
-1. Upon form submission, build the grid.
-    - The form provides the number of rows (via the grid height) and columns (via the grid width).
-    - The grid is a `<table>`.
-2. Upon clicking on a single grid square, color that square's background color to the currently selected hex color.
-3. Build it with JavaScript (not jQuery).
+1. Dynamically set the size of the table as an N by M grid.
+2. Choose a color.
+3. Click a cell in the grid to fill that cell with the chosen color.
 
-## Reviewer Note
+In this project, i'll use my front-end programming skills from JavaScript Foundations and Intro to jQuery, including:
 
-`///` indicates "thought process" or strategy for the code/project reviewer.
+    Defining variables with const and let
+    Accessing the DOM using methods of the document object
+    Declaring functions and attaching them to DOM objects as event listeners
+    Writing nested loops and using loop variables
 
-## Disclaimer
-
-This repository is not for general use, but rather an exercise as part of an education program.
-   
-David
+I will be employing jQuery as a tool to manipulate the DOM for this project.
