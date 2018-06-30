@@ -12,9 +12,9 @@ In this project, we have been provided with a headstart via the [starter templat
 
 In this project, i'll use my front-end programming skills from JavaScript Foundations and Intro to jQuery, including:
 
-   Defining variables with const and let
-   Accessing the DOM using methods of the document object
-   Declaring functions and attaching them to DOM objects as event listeners
-   Writing nested loops and using loop variables
+1. Defining variables with const and let
+2. Accessing the DOM using methods of the document object
+3. Declaring functions and attaching them to DOM objects as event listeners
+4. Writing nested loops and using loop variables
 
 I will be employing jQuery as a tool to manipulate the DOM for this project.
